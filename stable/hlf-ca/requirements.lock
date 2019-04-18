@@ -1,9 +1,12 @@
 dependencies:
 - name: postgresql
   repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 2.6.1
+  version: 3.18.0
 - name: mysql
   repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 0.10.2
-digest: sha256:1b5b212945abc2abc2317189f0d048b1c90f093db8ed5482db2c35a9d463259f
-generated: 2018-11-16T17:00:11.413931+02:00
+  version: 0.15.0
+- name: nginx-ingress
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.4.0
+digest: sha256:11af9dad20fdef68a5e8fdf597d7a268243b437c621d91ee32f0f4f76b489de3
+generated: 2019-04-17T21:32:25.330857+03:00

@@ -12,3 +12,10 @@ dependencies:
   condition: mysql.enabled
   tags:
     - mysql-database
+
+- name: nginx-ingress
+  version: x.x.x
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  condition: nginx.enabled
+  tags:
+    - nginx-ingress

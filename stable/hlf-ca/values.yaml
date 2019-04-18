@@ -4,7 +4,7 @@
 
 image:
   repository: hyperledger/fabric-ca
-  tag: 1.3.0
+  tag: 1.4.0
   pullPolicy: IfNotPresent
 
 service:
@@ -42,10 +42,12 @@ persistence:
 ##################################
 ## Further configuration options #
 ##################################
+
 ## CA Admin Username
 adminUsername: admin
 ## CA Admin password (set to 24 random characters by default)
 # adminPassword:
+
 ## Name of CA, stored in FABRIC_CA_SERVER_CA_NAME (and the configMap "--config", if deploying a Root CA)
 caName: org1-ca
 
@@ -111,7 +113,7 @@ externalDatabase:
 
 ## Settings used in configMap "--config"
 config:
-  hlfToolsVersion: 1.3.0
+  hlfToolsVersion: 1.4.0
   ## Mount the TLS certificate & key to disk?
   mountTLS: false
   ## Enable debug logging in ca Server configuration file

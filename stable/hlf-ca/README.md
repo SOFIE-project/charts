@@ -68,10 +68,10 @@ The command removes all the Kubernetes components associated with the chart and 
 
 The following table lists the configurable parameters of the Hyperledger Fabric CA chart and default values.
 
-| Parameter                          | Description                                     | Default                                                    |
+| Parameter                          | Description                                     | Default                                                     |
 | ---------------------------------- | ------------------------------------------------ | ---------------------------------------------------------- |
 | `image.repository`                 | `hlf-ca` image repository                        | `hyperledger/fabric-ca`                                    |
-| `image.tag`                        | `hlf-ca` image tag                               | `x86_64-1.1.0`                                             |
+| `image.tag`                        | `hlf-ca` image tag                               | `1.4.0`                                                    |
 | `image.pullPolicy`                 | Image pull policy                                | `IfNotPresent`                                             |
 | `service.port`                     | TCP port                                         | `7054`                                                     |
 | `service.type`                     | K8S service type exposing ports, e.g. `ClusterIP`| `ClusterIP`                                                |
@@ -97,7 +97,7 @@ The following table lists the configurable parameters of the Hyperledger Fabric 
 | `externalDatabase.password`        | Password for the above username                  | ``                                                         |
 | `externalDatabase.database`        | Name of the existing database                    | ``                                                         |
 | `externalDatabase.port`            | Database port number                             | ``                                                         |
-| `config.hlfToolsVersion`           | Version of Hyperledger Fabric tools used         | `1.1.0`                                                    |
+| `config.hlfToolsVersion`           | Version of Hyperledger Fabric tools used         | `1.4.0`                                                    |
 | `config.mountTLS`                  | If TLS secrets are generated, do we mount them?  | `false`                                                    |
 | `config.debug`                     | Enable debug logging                             | `true`                                                     |
 | `config.csr.ca.pathlength`         | Pathlength of CA certificate hierarchy           | `1`                                                        |
