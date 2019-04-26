@@ -14,7 +14,7 @@ The Hyperledger Fabric Orderer can be installed as either a `solo` orderer (for 
 
 This Orderer can receive transaction endorsements and package them into blocks to be distributed to the nodes of the Hyperledger Fabric network.
 
-Learn more about deploying a production ready consensus framework based on Apache [Kafka](https://hyperledger-fabric.readthedocs.io/en/release-1.1/kafka.html?highlight=orderer). Minimally, you will need to set these options:
+Learn more about deploying a production ready consensus framework based on Apache [Kafka](https://hyperledger-fabric.readthedocs.io/en/release-1.4/kafka.html?highlight=orderer). Minimally, you will need to set these options:
 
 ```
   "default.replication.factor": 4  # given a 4 node Kafka cluster
@@ -81,10 +81,10 @@ The command removes all the Kubernetes components associated with the chart and 
 
 The following table lists the configurable parameters of the Hyperledger Fabric Orderer chart and default values.
 
-| Parameter                          | Description                                     | Default                                                    |
+| Parameter                          | Description                                      | Default                                                    |
 | ---------------------------------- | ------------------------------------------------ | ---------------------------------------------------------- |
-| `image.repository`                 | `hlf-ord` image repository                       | `hyperledger/fabric-orderer`                                    |
-| `image.tag`                        | `hlf-ord` image tag                              | `x86_64-1.1.0`                                             |
+| `image.repository`                 | `hlf-ord` image repository                       | `hyperledger/fabric-orderer`                               |
+| `image.tag`                        | `hlf-ord` image tag                              | `x86_64-1.4.0`                                             |
 | `image.pullPolicy`                 | Image pull policy                                | `IfNotPresent`                                             |
 | `service.port`                     | TCP port                                         | `7050`                                                     |
 | `service.type`                     | K8S service type exposing ports, e.g. `ClusterIP`| `ClusterIP`                                                |
